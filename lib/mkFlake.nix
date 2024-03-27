@@ -1,7 +1,7 @@
 { flake-utils-plus }:
 
 { self
-, supportedSystems ? flake-utils-plus.lib.defaultSystems
+, supportedSystems ? flake-utils-plus.lib.defaultSystems ++ [ "riscv64-linux" ]
 , inputs
 , channels ? { }
 , channelsConfig ? { }
